@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;border: 2px solid black;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;border: 2px solid black;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+        @media only screen and (max-width: 768px) {
+        [class*="col-"] {
+            width: 100%;
+        }
+    }
+
+        .head{
+            background-color: rgba(0,0,0.2,0.5);
+        }
+
+        .image{
+            width: 116px;
+            height: 116px;
+            border-radius: 50%;
+        }
+
+        .img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name{
+            text-align: center;
+        }
+
+
+
+
+
+        @media (max-width: 2400px){
+            h1{
+                font-size: 3rem;
+                font-weight: bold;
+            }
+            
+            .image{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            }
+
+            .name h3{
+                font-size: 2rem;
+                font-weight: bold;
+            }
+
+            h3{
+                font-size: 4rem;
+            }
+
+            .about h1{
+            font-size: 3rem;
+            background-color: rgba(0,0,0.2,0.5);
+            }
+
+            .education h1{
+            font-size: 3rem;
+            background-color: rgba(0,0,0.2,0.5);
+            }
+
+            .row{
+                text-align: center;
+            }
+
+            .row p{
+                font-size: 1.9rem;
+            }
+
+            .head{
+                background-color: cornsilk;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--Header-->
+    <div class="container-fluid well head">
+        <div class="col-md-3  img">
+            <img src="img/me2.jpg" alt="" class="image">
+        </div>
+        <div class="col-md-9  name">
+            <h1>M Dhanush Bharathi</h1>
+            <h3>PROGRAMMER | DEVELOPER | ML</h3>
+        </div>
+    </div>
+
+    <!--summary-->
+    <div class="about">
+        <h1>About Myself</h1>
+    </div>
+    <div class="container-fluid well">
+        
+    </div>
+
+    <!--Education-->
+    <div class="education">
+        <h1>Education</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-md-4 well">
+        <h3>Bachelors Degree</h3>
+        <p>Einstein College of Engineeering, (2020-Present)</p>
+        <p>Secured With 7.82 CGPA (Till 5th sem)</p>
+        </div>
+        <div class="col-md-4 well">
+        <h3>HSC</h3>
+        <p>Merit Matriculation Hr. Sec. School, (2019-2020)</p>
+        <p>Secured With 65.7%</p>
+        </div>
+        <div class="col-md-4 well">
+        <h3>SSLC</h3>
+        <p>Merit Matriculation Hr. Sec. School, (2017-2018)</p>
+        <p>Secured With 81%</p>
+        </div>
+    </div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
